@@ -1,0 +1,150 @@
+/* Write some CSS below */
+body {
+  font-family: Poppins;
+  color: #FFBA08;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: Poppins;
+}
+
+a {
+  color: #FFBA08;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #FFBA08;
+}
+<head>
+  <!-- [...] -->
+  <link href="https://fonts.google.com/share?selection.family=Carlito">
+  <!-- [...] -->
+</head>
+
+body {
+  font-family: Poppins;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #FFBA08;
+  font-family: Poppins;
+}
+
+p {
+  color: #FFBA08;
+  opacity: .7;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://th.bing.com/th/id/R.a21c971b3b20e884137e446b7352d222?rik=c%2fFsas0yjp4DqA&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 45px;
+  margin: 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 24px;
+}
+
+.button-blue {
+  background-color: #FFBA08;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: #FFBA08;
+  color: white;
+}
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  width: 200px;
+  text-align: center;
+  padding: 30px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white h3 {
+  margin-bottom: 0;
+}
+
+.footer {
+  background: #FFBA08;
+  text-align: center;
+  padding: 25px 0;
+  width: 100%; 
+}
+
+.footer p {
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 25px
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
